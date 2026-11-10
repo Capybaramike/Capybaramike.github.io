@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6f4ef">
   <meta name="description" content="个人主页与项目作品集">
-  <title>你好，我是你的名字</title>
+  <title>Mike Wang | 个人主页 Personal Website</title>
   <style>
     :root{--ink:#20231f;--muted:#73776e;--paper:#f6f4ef;--card:#fffefa;--line:#e6e3db;--green:#315c48;--lime:#d5ed9b}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 Inter,"PingFang SC","Microsoft YaHei",sans-serif}
@@ -28,35 +28,37 @@
     .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;min-height:190px;display:flex;flex-direction:column}.project .num{font-size:12px;color:var(--green);font-weight:750}.project h3{margin:15px 0 7px;font-size:19px}.project p{margin:0;color:var(--muted);font-size:14px}.project a{margin-top:auto;padding-top:18px;color:var(--green);font-weight:650;font-size:13px}
     .contact{background:var(--green);color:white;border-radius:18px;padding:34px;display:flex;justify-content:space-between;align-items:center;gap:22px}.contact h2{font-size:27px;margin:0 0 6px}.contact p{margin:0;color:#d5e1d8}.contact .button{background:var(--lime);color:#263c2c;white-space:nowrap}
     footer{padding:30px 0 42px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between}
+    .en{display:block;color:var(--muted);font-size:.88em;font-weight:400;letter-spacing:0}
+    .bilingual{display:inline-block;vertical-align:middle}.bilingual .en{font-size:.78em}
     @media(max-width:700px){nav{gap:14px}.hero{padding:72px 0 60px;grid-template-columns:1fr;gap:32px}.portrait{width:190px;grid-row:1}.projects{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.contact{align-items:start;flex-direction:column}footer{gap:10px;flex-direction:column}}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <header><a class="brand" href="#">你好<span>.</span></a><nav><a href="#about">关于</a><a href="#work">作品</a><a href="#contact">联系</a></nav></header>
+    <header><a class="brand" href="#">Mike Wang<span>.</span></a><nav><a href="#about">关于 / About</a><a href="#work">兴趣 / Interests</a><a href="#contact">联系 / Contact</a></nav></header>
     <main>
       <section class="hero" style="border:0">
-        <div><div class="eyebrow"><i class="dot"></i> 你好，很高兴认识你</div>
-          <h1>我是<br><em>你的名字</em></h1>
-          <p class="intro">在这里用一两句话介绍自己。说说你正在做什么、关心什么，以及你希望别人记住你的哪一点。</p>
-          <div class="actions"><a class="button" href="#work">看看我的作品 ↘</a><a class="button light" href="#contact">联系我</a></div>
+        <div><div class="eyebrow"><i class="dot"></i> 机器人与人工智能 / ROBOTICS &amp; AI</div>
+          <h1>你好，我是<br><em>Mike Wang</em></h1>
+          <p class="intro">我喜欢机器人和人工智能，乐于探索它们如何改变我们与世界互动的方式。<span class="en">I’m interested in robotics and artificial intelligence, and how they can change the way we interact with the world.</span></p>
+          <div class="actions"><a class="button" href="#work">看看我的兴趣 / My interests ↘</a><a class="button light" href="#contact">联系我 / Contact</a></div>
         </div>
-        <div class="portrait" role="img" aria-label="个人头像占位图"><b>放一张你的照片</b></div>
+        <div class="portrait" role="img" aria-label="Mike Wang 的头像占位图"><b>Mike Wang</b></div>
       </section>
-      <section id="about"><div class="section-head"><div><div class="kicker">ABOUT ME</div><h2>关于我</h2></div></div>
-        <p class="about">写一段简短的自我介绍：你的经历、擅长的事情、目前感兴趣的方向，或者你正在寻找的合作机会。保持真实、具体，让访客快速了解你。</p>
-        <div class="chips"><span class="chip">兴趣 / 技能一</span><span class="chip">兴趣 / 技能二</span><span class="chip">兴趣 / 技能三</span></div>
+      <section id="about"><div class="section-head"><div><div class="kicker">ABOUT ME / 关于我</div><h2>关于我 <span class="bilingual">/ About me</span></h2></div></div>
+        <p class="about">我是 Mike Wang，对机器人和人工智能充满兴趣，欢迎交流相关想法与项目。<span class="en">I’m Mike Wang, passionate about robotics and artificial intelligence. I’m always happy to connect and exchange ideas or projects.</span></p>
+        <div class="chips"><span class="chip">机器人 / Robotics</span><span class="chip">人工智能 / AI</span><span class="chip">探索与创造 / Learn &amp; Build</span></div>
       </section>
-      <section id="work"><div class="section-head"><div><div class="kicker">SELECTED WORK</div><h2>项目与作品</h2></div></div>
+      <section id="work"><div class="section-head"><div><div class="kicker">AREAS OF INTEREST / 兴趣方向</div><h2>兴趣方向 <span class="bilingual">/ Interests</span></h2></div></div>
         <div class="projects">
-          <article class="project"><span class="num">01 / PROJECT</span><h3>项目名称一</h3><p>简单介绍这个项目解决了什么问题，以及你在其中负责的工作。</p><a href="https://github.com/Capybaramike">查看项目 ↗</a></article>
-          <article class="project"><span class="num">02 / PROJECT</span><h3>项目名称二</h3><p>放上你做过的作品、研究、文章或其他值得分享的成果。</p><a href="https://github.com/Capybaramike">查看项目 ↗</a></article>
-          <article class="project"><span class="num">03 / PROJECT</span><h3>项目名称三</h3><p>暂时没有项目也没关系，可以替换成你的兴趣、学习记录或计划。</p><a href="https://github.com/Capybaramike">查看项目 ↗</a></article>
+          <article class="project"><span class="num">01 / INTEREST</span><h3>机器人 <span class="bilingual">/ Robotics</span></h3><p>关注机器人如何感知、决策并与真实世界互动。<span class="en">Interested in how robots perceive, make decisions, and interact with the real world.</span></p><a href="https://github.com/Capybaramike">我的 GitHub / My GitHub ↗</a></article>
+          <article class="project"><span class="num">02 / INTEREST</span><h3>人工智能 <span class="bilingual">/ Artificial Intelligence</span></h3><p>关注人工智能技术及其实际应用。<span class="en">Interested in AI technologies and their real-world applications.</span></p><a href="https://github.com/Capybaramike">我的 GitHub / My GitHub ↗</a></article>
+          <article class="project"><span class="num">03 / INTEREST</span><h3>机器人 × AI <span class="bilingual">/ Robotics × AI</span></h3><p>探索机器人与人工智能的结合，以及由此带来的新可能。<span class="en">Exploring how robotics and AI can work together and the possibilities they create.</span></p><a href="https://github.com/Capybaramike">我的 GitHub / My GitHub ↗</a></article>
         </div>
       </section>
-      <section id="contact"><div class="contact"><div><h2>一起做点有意思的事？</h2><p>欢迎通过邮件或 GitHub 联系我。</p></div><a class="button" href="mailto:hello@example.com">给我发邮件 ↗</a></div></section>
+      <section id="contact"><div class="contact"><div><h2>一起做点有意思的事？<span class="en">Let’s make something interesting together.</span></h2><p>欢迎交流机器人与人工智能。<span class="en">Feel free to reach out about robotics and AI.</span></p></div><a class="button" href="https://github.com/Capybaramike">联系我 / Get in touch ↗</a></div></section>
     </main>
-    <footer><span>© 2026 你的名字</span><span><a href="https://github.com/Capybaramike">GitHub ↗</a>　·　用心制作</span></footer>
+    <footer><span>© 2026 Mike Wang</span><span><a href="https://github.com/Capybaramike">GitHub ↗</a>　·　用心制作 / Made with care</span></footer>
   </div>
 </body>
 </html>
